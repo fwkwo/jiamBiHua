@@ -1,0 +1,321 @@
+*{
+	margin:0;
+	padding: 0; 
+}
+.box{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    left: 30%;
+    top: 50px;
+}
+/*头部*/
+.top{
+	width: 135px;
+    height: 115px;
+    border: 5px solid #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 124px;
+    z-index: 2;
+    background: #fff;
+}
+.hair_01{
+	position: absolute;
+    top: -3px;
+    left: 35%;
+    width: 5px;
+    height: 25px;
+    background: #000;
+    border-radius: 32%;
+}
+.hair_02{
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    width: 5px;
+    height: 33px;
+    background: #000;
+    border-radius: 32%;
+    margin-left: -5px;
+}
+.hair_03{
+	position: absolute;
+    top: -3px;
+    left: 58%;
+    width: 5px;
+    height: 25px;
+    background: #000;
+    border-radius: 32%;
+}
+/*眼睛*/
+.eye_box{
+	position: absolute;
+    height: 17px;
+    overflow: hidden;
+    top: 45px;
+    left: 19px;
+    width: 100px;
+}
+.r_eye,.l_eye{
+    background: #fff;
+    width: 16px;
+    border: 5px solid black;
+    height: 54px;
+    border-radius: 50%;
+    float: left;
+}
+.r_eye{
+	float: right;
+}
+/*左耳*/
+.ears_f{
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #000;
+    transform: rotate(0deg);
+    border-bottom-left-radius: 75%;
+    border-top-right-radius: 75%;
+    border-top-left-radius: 11%;
+    z-index: 1;
+}
+/*右耳*/
+.ears_R{
+	position: absolute;
+    top: 0px;
+    left: 90px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #000;
+    transform: rotate(0deg);
+    border-bottom-right-radius: 75%;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 11%;
+    z-index: 1;
+}
+/*nose*/
+.nose_box {
+   position: absolute;
+    top: 40%;
+    z-index: 66;
+    left: 35%;
+}
+.nose {
+    width: 20px;
+    height: 13px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+}
+/*mouth*/
+.mouth_box{
+	position: absolute;
+    height: 17px;
+    overflow: hidden;
+    top: 10px;
+    left: -20px;
+    width: 100px;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);z-index: 1
+}
+.mouth_l,.mouth_r {
+	background: #fff;
+    width: 25px;
+    border: 5px solid black;
+    height: 23px;
+    border-radius: 50%;
+    float: left;
+}
+.mouth_r{
+	margin-left: -7px;
+}
+/*beard*/
+.beard_l{
+	position: absolute;
+    z-index: 99;
+    top: 74px;
+    left: -20px;
+ }  
+ .r_d{
+	transform: rotate(15deg);
+    margin-top: 7px;
+}
+ .beard_r{
+	position: absolute;
+    z-index: 99;
+    top: 72px;
+    right: 12px;
+ }  
+.beard_l div,.beard_r div{
+	width: 45px;
+    height: 5px;
+    background: #000;
+    border-radius: 32%;
+}
+.l_d{
+	transform: rotate(-15deg);
+    margin-top: 7px;
+}
+/*animate beard*/
+.beard_l{
+	animation:myfirst 3s linear 0s infinite alternate;
+	-moz-animation:myfirst 3s linear 0s infinite alternate; /* Firefox */
+	-webkit-animation:myfirst 3s linear 0s infinite alternate; /* Safari and Chrome */
+	-o-animation:myfirst 3s linear 0s infinite alternate; /* Opera */
+}
+.beard_r{
+	animation:mytwo 3s linear 0s infinite alternate;
+	-moz-animation:mytwo 3s linear 0s infinite alternate; /* Firefox */
+	-webkit-animation:mytwo 3s linear 0s infinite alternate; /* Safari and Chrome */
+	-o-animation:mytwo 3s linear 0s infinite alternate; /* Opera */
+}
+/*animated ear*/
+article.ears_f{
+	animation:mythree 3s linear 0s infinite alternate;
+	-moz-animation:mythree 3s linear 0s infinite alternate; /* Firefox */
+	-webkit-animation:mythree 3s linear 0s infinite alternate; /* Safari and Chrome */
+	-o-animation:mythree 3s linear 0s infinite alternate; /* Opera */
+}
+
+aside.ears_R{
+	animation:myfour 3s linear 0s infinite alternate;
+	-moz-animation:myfour 3s linear 0s infinite alternate; /* Firefox */
+	-webkit-animation:myfour 3s linear 0s infinite alternate; /* Safari and Chrome */
+	-o-animation:myfour 3s linear 0s infinite alternate; /* Opera */
+}
+
+/*create animate bread left*/
+@keyframes myfirst
+{
+	0%   {transform:rotate(0deg);}
+	50%  {transform:rotate(10deg);}
+	100% {transform:rotate(0deg);}
+}
+
+@-moz-keyframes myfirst
+{
+	0%   {transform:rotate(0deg);}
+	50%  {transform:rotate(10deg);}
+	100% {transform:rotate(0deg);}
+}
+
+@-webkit-keyframes myfirst
+{
+	0%   {transform:rotate(0deg);}
+	50%  {transform:rotate(10deg);}
+	100% {transform:rotate(0deg);}
+}
+
+@-o-keyframes myfirst
+{
+	0%   {transform:rotate(0deg);}
+	50%  {transform:rotate(10deg);}
+	100% {transform:rotate(0deg);}
+}
+
+/*create animate bread right*/
+@keyframes mytwo
+{
+	0%   {transform:rotate(0deg);}
+	50%  {transform:rotate(-10deg);}
+	100% {transform:rotate(0deg);}
+}
+
+@-moz-keyframes mytwo
+{
+	0%   {transform:rotate(0deg);}
+	50%  {transform:rotate(-10deg);}
+	100% {transform:rotate(0deg);}
+}
+
+@-webkit-keyframes mytwo
+{
+	0%   {transform:rotate(0deg);}
+	50%  {transform:rotate(-10deg);}
+	100% {transform:rotate(0deg);}
+}
+
+@-o-keyframes mytwo
+{
+	0%   {transform:rotateZ(0deg);}
+	50%  {transform:rotate(-10deg);}
+	100% {transform:rotate(0deg);}
+}
+/* ear lef*/
+@keyframes mythree
+{
+	0%   {transform:rotateZ(0deg);}
+	25%  {transform:rotateZ(10deg);}
+	50%  {transform:rotateZ(0deg);}
+	100% {transform:rotateZ(-10deg);}
+	100% {transform:rotateZ(0deg);}
+}
+
+@-moz-keyframes mythree
+{
+	0%   {transform:rotateZ(0deg);}
+	25%  {transform:rotateZ(10deg);}
+	50%  {transform:rotateZ(0deg);}
+	100% {transform:rotateZ(-10deg);}
+	100% {transform:rotateZ(0deg);}
+}
+
+@-webkit-keyframes mythree
+{
+	0%   {transform:rotateZ(0deg);}
+	25%  {transform:rotateZ(10deg);}
+	50%  {transform:rotateZ(0deg);}
+	100% {transform:rotateZ(-10deg);}
+	100% {transform:rotateZ(0deg);}
+}
+
+@-o-keyframes mythree
+{
+	0%   {transform:rotateZ(0deg);}
+	25%  {transform:rotateZ(10deg);}
+	50%  {transform:rotateZ(0deg);}
+	100% {transform:rotateZ(-10deg);}
+	100% {transform:rotateZ(0deg);}
+}
+/*ear right*/
+@keyframes myfour
+{
+	0%   {transform:rotateZ(0deg);}
+	25%  {transform:rotateZ(-10deg);}
+	50%  {transform:rotateZ(0deg);}
+	100% {transform:rotateZ(10deg);}
+	100% {transform:rotateZ(0deg);}
+}
+
+@-moz-keyframes myfour
+{
+	0%   {transform:rotateZ(0deg);}
+	25%  {transform:rotateZ(-10deg);}
+	50%  {transform:rotateZ(0deg);}
+	100% {transform:rotateZ(10deg);}
+	100% {transform:rotateZ(0deg);}
+}
+
+@-webkit-keyframes myfour
+{
+	0%   {transform:rotateZ(0deg);}
+	25%  {transform:rotateZ(-10deg);}
+	50%  {transform:rotateZ(0deg);}
+	100% {transform:rotateZ(10deg);}
+	100% {transform:rotateZ(0deg);}
+}
+
+@-o-keyframes myfour
+{
+	0%   {transform:rotateZ(0deg);}
+	25%  {transform:rotateZ(-10deg);}
+	50%  {transform:rotateZ(0deg);}
+	100% {transform:rotateZ(10deg);}
+	100% {transform:rotateZ(0deg);}
+}
